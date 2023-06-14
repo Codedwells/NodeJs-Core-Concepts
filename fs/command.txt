@@ -1,1 +1,1 @@
-create a file ./text😃.txt
+add | ./trial.txt | This is what has been added
