@@ -54,7 +54,7 @@ import fs from 'fs/promises';
 
     const addToFile = async (path, content) => {
         try {
-            const isExisting = await fs.open(path, 'r');
+            const isExisting = await fs.open(path, 'a');
 
             await fs.appendFile(path, content.trim());
 
@@ -62,7 +62,7 @@ import fs from 'fs/promises';
 
             isExisting.close();
         } catch (err) {
-            console.log(`AddToFileError : ${err.message} `);
+           console.log(`AddToFileError : ${err.message} `);
         }
     };
 
