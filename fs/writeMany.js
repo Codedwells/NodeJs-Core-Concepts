@@ -15,6 +15,7 @@ const writeMany = async () => {
     console.timeEnd('writeTime');
 
     myFile.close();
+    
 };
 
 writeMany();
